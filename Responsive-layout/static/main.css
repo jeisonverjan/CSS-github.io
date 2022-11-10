@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: azure;
+    font-family:'Courier New', Courier, monospace;
+    color: black;
+}
+
+header {
+    padding: 50px;
+    background-color:  #CBF83E;
+    text-align: center;
+    
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #D8DFEE;
+    justify-content: flex-start;
+    
+}
+
+nav a {
+    padding: 20px;
+    text-decoration: none;
+}
+
+nav a:visited {
+    color: black;
+}
+
+nav a:hover {
+    background-color: #d9e5b7;
+}
+
+@media screen and (max-width: 500px) {
+    nav, .flex-container {
+        flex-direction: column;
+    }
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-container aside {
+    flex: 30%;
+    background-color:#ABA8A9;
+    text-align: center;
+    padding: 5px;
+}
+
+.flex-container section {
+    flex: 70%;
+    background-color: #8c898a;
+    text-align: center;
+    padding: 5px;
+}
+
+footer {
+    padding: 20px;
+    background-color:#D8DFEE;
+    text-align: center;
+}
