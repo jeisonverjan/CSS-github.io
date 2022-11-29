@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.5;
+    color: #4d4e53;
+    
+}
+
+body {
+    background: azure;
+}
+
+nav {
+    border-right: 1px solid gray;
+    grid-area: nav;
+    display: block;
+}
+
+main {
+    grid-area: main;
+    padding: 2rem;
+    
+}
+
+.grid-container {
+    display: grid;
+    grid-template:
+        "nav" auto
+        "main" auto;
+}
+
+@media (min-width: 600px) {
+    .grid-container {
+        grid-template:
+            "nav main" /
+            40% 60%;
+    }
+
+}
+
+@media (min-width: 900px) {
+    .grid-container {
+        grid-template:
+            "nav main" /
+            30% 70%;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .grid-container {
+        grid-template:
+            "nav main" /
+            20% 80%;
+    }
+}
+
+/* Nav Bar styles */
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    border-bottom: solid 1px gray;
+    border-right: solid 1px gray;
+    padding: 1rem;
+    text-align: center;
+}
+
+.list {
+    display: block;
+}
+
+.list li {
+    display: block;
+    border-bottom: solid 1px gray;
+    border-right: solid 1px gray;
+    padding: 0.5rem;
+    padding-left: 1rem;
+}
+
+/* Sections Styles */
+
+.main-section {
+    text-align: justify;
+}
+
+.section-text {
+    padding: 1rem;
+}
+
+.section-text * {
+    margin-bottom: 1rem;
+}
+
+.section-text ul {
+    margin-left: 2.5rem;
+}
+
+code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: lightgray;
+    border-radius: 5px;
+    font-family: monospace;
+    margin-left: 2rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
